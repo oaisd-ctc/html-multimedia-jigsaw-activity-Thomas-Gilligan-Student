@@ -10,28 +10,44 @@
 
 <body>
     <h1>HTML Multimedia Demonstration</h1>
-    <h3>Video Element</h3>
-    <video src="resources/Raindrops_Videvo.mp4" height="240" width="700" controls></video>
-    <h3>Audio Element</h3>
-    <audio src="resources/mixaund-feel.mp3#t=00:01:21" controls></audio>
-    <h3>Inline Frame Element</h3>
-    <iframe src="https://example.com" width="700" height="350"></iframe>
-    <h3>Canvas Element</h3>
-    <canvas width="180" height="90" id="myCanvas"></canvas>
-    <script>
-        const canvas = document.getElementById("myCanvas");
-        const ctx = canvas.getContext("2d");
-        ctx.fillStyle = "#0066A0";
-        ctx.fillRect(0, 0, 150, 75);
-    </script>
-    <h3>SVG Element</h3>
-    <svg width="200" height="575">
-        <circle cx="100" cy="40" r="40" fill="#ff0044" stroke-width="3" stroke="#000"></circle>
-        <rect x="25" y="120" height="50" width="150" fill="#088" stroke-width="3" stroke="#000"></rect>
-        <ellipse cx="100" cy="250" rx="100" ry="37.5" fill="#00ff88" stroke-width="3" stroke="#000"></ellipse>
-        <line x1="0" y1="327.5" x2="200" y2="402.5" stroke-width="2" stroke="#aaa"></line>
-        <polygon points="100,442.5 200,522.5 0,522.5" style="fill: #FFD700; stroke: #000; stroke-width:3;"></polygon>
-    </svg>
+    <main>
+        <div id="left-col">
+            <h3>SVG Element</h3>
+            <svg width="200" height="575">
+                <circle cx="100" cy="40" r="40" fill="#ff0044" stroke-width="3" stroke="#000"></circle>
+                <rect x="25" y="120" height="50" width="150" fill="#088" stroke-width="3" stroke="#000"></rect>
+                <ellipse cx="100" cy="250" rx="100" ry="37.5" fill="#00ff88" stroke-width="3" stroke="#000"></ellipse>
+                <line x1="0" y1="327.5" x2="200" y2="402.5" stroke-width="2" stroke="#aaa"></line>
+                <polygon points="100,442.5 200,522.5 0,522.5" style="fill: #FFD700; stroke: #000; stroke-width:3;"></polygon>
+            </svg>
+        </div>
+        <div id="mid-col">
+            <div>
+                <h3>Video Element</h3>
+                <video src="resources/Raindrops_Videvo.mp4" height="360" width="630" controls></video>
+            </div>
+            <div>
+                <h3>Audio Element</h3>
+                <audio src="resources/mixaund-feel.mp3#t=00:01:21" controls></audio>
+            </div>
+        </div>
+        <div id="right-col">
+            <div>
+                <h3>Inline Frame Element</h3>
+                <iframe src="https://example.com" width="630" height="360"></iframe>
+            </div>
+            <div>
+                <h3>Canvas Element</h3>
+                <canvas width="180" height="90" id="myCanvas"></canvas>
+            </div>
+        </div>
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#0066A0";
+            ctx.fillRect(0, 0, 150, 75);
+        </script>
+    </main>
 </body>
 
 </html>

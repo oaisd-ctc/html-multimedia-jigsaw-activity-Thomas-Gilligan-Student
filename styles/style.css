@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #111;
     text-align: center;
@@ -5,16 +9,36 @@ body {
     font-family: arial;
 }
 
-video,audio {
+video,audio,iframe {
     border: 2px solid #A3CEB4;
     border-radius: 5px;
-}
-
-audio {
-    width: 700px;
 }
 
 canvas {
     background-color: #333;
     border-radius: 3px;
+}
+
+main {
+    display: flex;
+}
+
+div {
+    padding: 10px;
+}
+
+#left-col {
+    flex: 20%;
+}
+
+#mid-col {
+    flex: 40%;
+}
+
+#right-col {
+    flex: 40%;
+}
+
+audio {
+    width: 420;
 }
